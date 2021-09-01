@@ -190,7 +190,7 @@ section div.container-form div.card {
   -ms-grid-column-align: center;
       justify-self: center;
   text-align: center;
-  color: #3d4d80;
+  color: #063246;
 }
 
 section div.container-form input {
@@ -214,13 +214,17 @@ section div.container-form input.button {
   margin-right: 15px;
   width: 90px;
   height: 40px;
-  background-color: #3d4d80;
+  background-color: #063246;
   color: white;
   letter-spacing: 1.5px;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 section div.container-form input.button:hover {
-  background-color: #4d61a1;
+  background-color: #094c6b;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 @media screen and (max-width: 700px) {
