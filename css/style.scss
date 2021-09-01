@@ -162,7 +162,7 @@ section{
             font-size: 155px;
             justify-self: center;
             text-align: center;
-            color: rgb(61, 77, 128);
+            color: #063246;
         }
         input{
             padding: 5px;
@@ -183,11 +183,13 @@ section{
             margin-right: 15px;
             width: 90px;
             height: 40px;
-            background-color: rgb(61, 77, 128);
+            background-color: #063246;
             color: white;
             letter-spacing: 1.5px;
+            transition: .4s;
             &:hover{
-                background-color: rgb(77, 97, 161);
+                background-color: rgb(9, 76, 107);
+                transition: .4s;
             }
         }
     }
