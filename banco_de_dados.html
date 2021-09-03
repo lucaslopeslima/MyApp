@@ -37,13 +37,14 @@
     
         <div class="container">
             <header>
-                <h1 class="header-title">Cadastro de Clientes</h1>
+                <h1 class="header-title">Banco de Clientes</h1>
             </header>
+
             <main>
                 <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
                 <table id="tableClient" class="records">
                     <thead>
-                        <tr>
+                        <tr class="titulo">
                             <th>Nome</th>
                             <th>E-mail</th>
                             <th>CPF</th>
@@ -55,8 +56,13 @@
         
                     </tbody>
                 </table>
-                
+            </main>
+
+        </div><!--CONTAINER-->
+
     </section>
+
+
     <div class="modal" id="modal">
         <div class="modal-content">
             <header class="modal-header">
@@ -85,8 +91,8 @@
                 <button id="salvar" class="button green">Salvar</button>
                 <button id="cancelar" class="button blue">Cancelar</button>
             </footer>
+        </div>
     </div>
-
 
 
     <script src="JS/mask.js"></script>

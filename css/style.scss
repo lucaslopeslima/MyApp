@@ -5,10 +5,30 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #063246;
+    --secundary-color: #1887bbbd;
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
 
 body{
     font-family: "Roboto", sans-serif;
 }
+::-webkit-scrollbar{
+    display: none;
+}
+/* ::-webkit-scrollbar-thumb{
+    background: #08415c;
+    border-radius: 0px 40px 40px 0px;
+    &:hover{
+        background: #0c6188;
+    }
+}
+::-webkit-scrollbar-corner{
+    display: none;
+} */
+
 nav{
     z-index: 1111;
 }
@@ -142,6 +162,8 @@ section{
         -o-border-radius: 15px;
         backdrop-filter: blur(10px);
         padding: 50px;
+        overflow-y: scroll;
+        overflow-x: scroll;
     }
     div.container-form{
         width: 80vw;
@@ -216,6 +238,21 @@ section{
     }
     
 }
+@media screen and (max-width: 700px){
+
+}
+@media screen and (max-width: 1000px){
+    /* section div.container{
+        overflow-x: scroll;
+    } */
+    section div.container{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+        z-index: 1;
+        max-width: none;
+    }
+}
 
 
 /////////////////////////////////////////////////////////////
@@ -229,8 +266,6 @@ div.modal{
     background: #00000090;
     opacity: 0;
     z-index: -1;
-    /* opacity: 1;
-    z-index: 1; */
 }
 
 .modal.active{
@@ -306,16 +341,6 @@ div.modal{
     }
 }
 
-/* .modal-field{
-    width: calc(50% - 10px);
-    height: 40px;
-    outline-style: none;
-    border-style: none;
-    box-shadow: 0 0 2px black;
-    padding: 0 10px;
-    font-size:1rem;
-} */
-
 .modal-field:focus{
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 3px var(--primary-color);
@@ -346,14 +371,6 @@ div.modal{
     }
 }
 .button{
-    /* border-style: none;
-    height: 40px;
-    padding: 6px 12px;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: box-shadow .6s ease; */
     border-style: none;
     cursor: pointer;
     display: inline;
@@ -433,7 +450,9 @@ button.red{
     min-width: 140px;
     text-align: center;
 }
-
+.records tr.titulo{
+    color: white;
+}
 .records tr:hover{
     background-color: var(--secundary-color);
 }
