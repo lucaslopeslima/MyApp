@@ -285,12 +285,7 @@ div.modal {
   z-index: -1;
 }
 
-.modal.active {
-  opacity: 1;
-  z-index: 1;
-}
-
-.modal-content {
+div.modal .modal-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +309,7 @@ div.modal {
   -o-border-radius: 15px;
 }
 
-.modal-header {
+div.modal .modal-content .modal-header {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,7 +323,7 @@ div.modal {
   font-size: 20px;
 }
 
-.modal-close {
+div.modal .modal-content .modal-header .modal-close {
   position: absolute;
   right: 0;
   top: -10px;
@@ -348,16 +343,16 @@ div.modal {
   -o-border-radius: 0 15px 0 15px;
 }
 
-.modal-close:hover {
+div.modal .modal-content .modal-header .modal-close:hover {
   background-color: #FF4949;
   color: white;
 }
 
-.modal-form {
+div.modal .modal-content .modal-form {
   padding: 0 20px;
 }
 
-.modal-form input {
+div.modal .modal-content .modal-form input {
   padding: 5px;
   border: 1px solid #d1d1d1;
   border-radius: 8px;
@@ -369,20 +364,25 @@ div.modal {
   display: block;
 }
 
-.modal-form input.text {
+div.modal .modal-content .modal-form input.text {
   width: 300px;
+}
+
+div.modal .modal-content .modal-footer {
+  background-color: inherit;
+  text-align: right;
+  padding: 0 20px;
+}
+
+.modal.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .modal-field:focus {
   border: 2px solid var(--primary-color);
   -webkit-box-shadow: 0 0 3px var(--primary-color);
           box-shadow: 0 0 3px var(--primary-color);
-}
-
-.modal-footer {
-  background-color: inherit;
-  text-align: right;
-  padding: 0 20px;
 }
 
 @media (max-width: 480px) {
@@ -424,7 +424,6 @@ div.modal {
 }
 
 .button:hover {
-  background-color: #094c6b;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -502,7 +501,7 @@ button.red {
   background-color: var(--secundary-color);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 760px) {
   .records {
     border-spacing: 5px;
   }
@@ -528,5 +527,17 @@ button.red {
   .records tr:hover {
     background-color: inherit;
   }
+}
+
+div.instruction h1 {
+  margin-bottom: 25px;
+}
+
+div.instruction h3 {
+  margin-top: 15px;
+}
+
+div.instruction p {
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
