@@ -238,9 +238,6 @@ section{
     }
     
 }
-@media screen and (max-width: 700px){
-
-}
 @media screen and (max-width: 1000px){
     /* section div.container{
         overflow-x: scroll;
@@ -266,6 +263,72 @@ div.modal{
     background: #00000090;
     opacity: 0;
     z-index: -1;
+    .modal-content{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        width: fit-content;
+        margin: 15vh auto;
+        padding-bottom: 20px;
+        background-color: white;
+        box-shadow: 1px 1px 10px black;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        .modal-header{
+            margin-top: 10px;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+            .modal-close{
+                position: absolute;
+                right: 0;
+                top:-10px;
+                display: block;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                user-select: none;
+                cursor: pointer;
+                border-radius: 0 15px 0 15px;
+                -webkit-border-radius: 0 15px 0 15px;
+                -moz-border-radius: 0 15px 0 15px;
+                -ms-border-radius: 0 15px 0 15px;
+                -o-border-radius: 0 15px 0 15px;
+                &:hover{
+                    background-color: #FF4949;
+                    color: white;
+                }
+            }
+        }
+        .modal-form{
+            padding: 0 20px;
+            input{
+                padding: 5px;
+                border: 1px solid rgb(209, 209, 209);
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+                margin-bottom: 25px;
+                display: block;
+        }
+            input.text{
+                width: 300px;
+            }
+        }
+        .modal-footer{
+            background-color: inherit;
+            text-align: right;
+            padding: 0 20px;
+        }
+    }
 }
 
 .modal.active{
@@ -273,73 +336,17 @@ div.modal{
     z-index: 1;
 }
 
-.modal-content{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    width: fit-content;
-    margin: 15vh auto;
-    padding-bottom: 20px;
-    background-color: white;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-
-.modal-header{
-    margin-top: 10px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-}
 
 
 
-.modal-close{
-    position: absolute;
-    right: 0;
-    top:-10px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    user-select: none;
-    cursor: pointer;
-    border-radius: 0 15px 0 15px;
-    -webkit-border-radius: 0 15px 0 15px;
-    -moz-border-radius: 0 15px 0 15px;
-    -ms-border-radius: 0 15px 0 15px;
-    -o-border-radius: 0 15px 0 15px;
-}
 
-.modal-close:hover{
-    background-color: #FF4949;
-    color: white;
-}
 
-.modal-form{
-    padding: 0 20px;
-    input{
-        padding: 5px;
-        border: 1px solid rgb(209, 209, 209);
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -o-border-radius: 8px;
-        margin-bottom: 25px;
-        display: block;
-    }
-    input.text{
-        width: 300px;
-    }
-}
+
+
+
+
+
+
 
 .modal-field:focus{
     border: 2px solid var(--primary-color);
@@ -347,11 +354,7 @@ div.modal{
 }
 
 
-.modal-footer{
-    background-color: inherit;
-    text-align: right;
-    padding: 0 20px;
-}
+
 
 @media (max-width:480px){
     .modal{
@@ -387,7 +390,6 @@ div.modal{
             -ms-border-radius: 8px;
             -o-border-radius: 8px;
          &:hover{
-            background-color: rgb(9, 76, 107);
             transition: .4s;
         }
 }
@@ -457,7 +459,7 @@ button.red{
     background-color: var(--secundary-color);
 }
 
-@media(max-width:480px){
+@media(max-width:760px){
     .records{
         border-spacing: 5px;
     }
@@ -479,5 +481,18 @@ button.red{
 
     .records tr:hover{
         background-color: inherit;
+    }
+}
+
+
+div.instruction{
+    h1{
+        margin-bottom: 25px;
+    }
+    h3{
+        margin-top: 15px;
+    }
+    p{
+text-align: justify;
     }
 }
